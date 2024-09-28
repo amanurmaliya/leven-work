@@ -21,9 +21,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "build":"npm install && npm install --prefix client && npm run build --prefix client",
+    "build": "npm install && npm install --prefix client && npm run build --prefix client",
     "start": "nodemon server/index.js",
-    "dev":"nodemon  server/app.js"
+    "dev": "nodemon  server/app.js"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "tailwindcss": "^3.4.10"
   },
   "proxy": "http://localhost:5000"

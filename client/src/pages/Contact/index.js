@@ -3,6 +3,7 @@ import Layout from "../../components/Layout";
 import Footer from "../../components/Footer";
 import { useNavigate } from "react-router-dom";
 import "./Contact.css";
+import axios from "axios";
 
 function Contact() {
   const [countries, setCountries] = useState([]);
@@ -20,7 +21,6 @@ function Contact() {
     description: "",
   });
 
-  
   const navigate = useNavigate();
 
   const closeForm = () => {
