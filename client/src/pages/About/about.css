@@ -1,0 +1,93 @@
+.slider {
+    height: 600px;
+    margin: auto;
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    padding: 5vw 8vw 0 8vw;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 18);
+    /* transition: transform 0.5s; */
+    animation: scroll 20s linear infinite;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 9));
+        /* Adjusted for right to left movement */
+    }
+}
+
+.slide {
+    height: 500px;
+    width:450px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    padding-top: 0px;
+    perspective: 100px;
+    position: relative;
+    border-radius: 0;
+        
+    /* Added position relative for z-index to work */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0s;
+    border-radius: 0;
+    /* Corrected typo in transition property */
+
+}
+
+.slide:hover img {
+    transform: translateZ(10px);
+    /* Added hover effect to image */
+}
+
+
+
+/* ------------------------------------------------------------------------------ */
+
+/* Media query for screens smaller than 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+    .faqs {
+      padding: 20px; /* Adjusts padding for mobile */
+      margin: 5px; /* Reduces margin for mobile */
+      text-align: center; /* Centers text for mobile */
+      border-radius: 20px; /* Adjusts border radius for mobile */
+    }
+  
+    .faqs h3 {
+      font-size: 2rem; /* Adjusts font size for mobile */
+      margin-left: 0; /* Resets margin for mobile */
+    }
+  
+    .faqs details summary {
+      font-size: 1.5rem; /* Adjusts summary font size for mobile */
+    }
+  
+    .faqs details div {
+      margin-left: 0; /* Resets margin for mobile */
+    }
+  
+    .faqs img {
+      width: 80%; /* Sets image width to 80% for mobile */
+      max-width: 200px; /* Restricts maximum image width for mobile */
+      margin-left: auto; /* Centers image for mobile */
+      margin-right: auto; /* Centers image for mobile */
+      border-radius: 16px; /* Adjusts border radius for mobile */
+    }
+  }

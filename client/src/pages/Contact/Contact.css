@@ -1,0 +1,325 @@
+/*google fonts - poppins*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.contact-page{
+  
+  
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  box-sizing: border-box;
+    font-family: "poppins" ,sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(  to top, #9be7f7,#8dd5e4, #afd2fb,#3bc7f6e7 ,#76bff8ef);
+  /* background-image: url(../../../public/Assets/images/pexels-nietjuh-843226.jpg); */
+  background-size: 100% 100%; /* Add this line */
+  padding: 40px 10px;
+  
+  .container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background-color: rgba(87, 86, 86, 0.3);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow:0 0 15px #afb1afe0;
+}
+
+.container header{
+  font-size: 3rem;
+  color:#fff;
+  font-weight: 500;
+    text-align: center;
+
+    
+  }
+  .container {
+    margin-top: 30px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+  box-shadow: 0 0 20px #131414e0;
+}
+
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+.input-box label{
+  color:#eae4e4;
+  font-size: larger;
+  
+  
+}.form .input-box input {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #f6f1f1; /* Change color to black */
+  border: 1px solid #32755c;
+  margin-top: 8px;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.form .input-box.phone-input {
+  display: flex;
+  align-items: center;
+}
+
+.form .input-box.phone-input select {
+  width: 100%;
+  padding: 0 15px;
+  border: 1px solid #0fda4ce0;
+  border-radius: 6px;}
+    .form .input-box input::placeholder {
+      color: #0b0b0bcc;
+    }
+    
+    .form .input-box textarea::placeholder {
+      color: #2b2727;
+    }
+    
+    .dropdown select::placeholder {
+      color: #3e3b3bbc;
+    }
+    
+    .dropdown select{
+      
+      height: 100%;
+      width: 100%;
+    outline: none;
+    font-size: 1rem;
+    border: none;
+    color: #f1ececf1;
+    padding: 14px;
+    margin:8px ;
+    border-radius: 6px;
+    padding: left 10px;
+    margin-left: 2px;
+    background-color: #28ce12;
+    
+    
+  }.input-box textarea{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    
+  }
+  button{margin-top: 15px;
+    width: 50%;
+    height: 50%;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 110px;
+    color: #fff;
+    background-color: #0974ae;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border-color: black;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition effect */
+  }
+  
+  button:hover {
+    background-color: rgb(30, 140, 177); /* Changed to blue */
+    box-shadow: 0 0 15px #2647b5; /* Add glow effect on hover */
+    cursor: pointer; /* Add pointer cursor on hover */
+    animation: pulse 3s infinite; /* Slowed down the animation speed to 3s */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 10px  #2647b5 ;
+    }
+    50% {
+      transform: scale(1.07);
+      box-shadow: 0 0 15px  #2647b5 ;
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 10px  #2647b5 ;
+    }
+  }
+  
+  button:focus {
+    box-shadow: 0 0 15px #272525; /* Add glow effect on focus */
+  }
+  
+  .form .input-box input, .dropdown select, .input-box textarea {
+    background-color: rgba(82, 51, 51, 0.189); /* Black background */
+    border: 1px solid #0f0c0cb7; /* White border */
+    box-shadow: 0 0 10px #000; /* Glow effect */
+    color: #110f0f; /* White text color */
+    padding: 10px;
+    border-radius: 6px;
+  }
+  .form .input-box input:valid, .dropdown select:valid, .input-box textarea:valid {
+    /* background-color: rgba(255, 255, 255, 0.824); Change background color to white when valid */
+    border: 1px solid #32755c; /* Change border color to green when valid */
+    box-shadow: 0 0 15px #454444; /* Increased glow effect when valid */
+    color: #000; /* Change text color to black when valid */
+  }
+  
+  .form .input-box input:hover, .dropdown select:hover, .input-box textarea:hover {
+    box-shadow: 0 0 15px #fff; /* Increased glow effect on hover */
+  }
+  
+  .form .input-box input:focus, .dropdown select:focus, .input-box textarea:focus {
+    box-shadow: 0 0 15px #fff; /* Increased glow effect on focus */
+  }
+  
+  
+  .close-btn {
+    position: absolute;
+    top:3px;
+    right: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    background-color: #ca0c0c;
+    padding: 4px 8px;
+    border: 1px solid #ffffffb7;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #fff;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .close-btn:hover {
+    box-shadow: 0 0 15px #fff;
+  }
+  
+  .close-btn:active {
+    background-color: #ae0a0a;
+    box-shadow: 0 0 10px #fff inset;
+  }
+  
+  
+  
+
+}
+
+
+span{
+  color: #df1010;
+}
+/* Mobile View - Targeting Only the Contact Page */
+@media (max-width: 767px) {
+  .contact-page {
+    padding: 20px;
+  }
+  
+  .contact-page .container {
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 0 10px #afb1afe0;
+  }
+  
+  .contact-page .container header {
+    font-size: 2rem;
+  }
+  
+  .contact-page .form .input-box {
+    margin-top: 15px;
+  }
+  
+  .contact-page .form .input-box input,
+  .contact-page .form .input-box textarea,
+  .contact-page .dropdown select {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  
+  .contact-page .phone-input {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .contact-page .form .input-box.phone-input select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .contact-page .form .input-box input.inline {
+    width: 100%;
+  }
+  
+  .contact-page button {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .contact-page .close-btn {
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+  }
+}
+
+/* Tablet View - Targeting Only the Contact Page */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-page {
+    padding: 30px;
+  }
+  
+  .contact-page .container {
+    padding: 20px;
+    width: 90%;
+  }
+  
+  .contact-page .container header {
+    font-size: 2.5rem;
+  }
+  
+  .contact-page .form .input-box {
+    margin-top: 15px;
+  }
+  
+  .contact-page .form .input-box input,
+  .contact-page .form .input-box textarea,
+  .contact-page .dropdown select {
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  .contact-page .phone-input {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .contact-page .form .input-box.phone-input select {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .contact-page .form .input-box input.inline {
+    width: calc(100% - 60px); /* Adjust width to accommodate select box */
+  }
+  
+  .contact-page button {
+    width: 100%;
+    margin: 15px 0;
+  }
+  
+  .contact-page .close-btn {
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+  }
+}

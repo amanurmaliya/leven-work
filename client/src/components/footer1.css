@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+.footer-body {
+  margin: 5;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  margin-bottom: 10px;
+  background-image: linear-gradient(to right, #c3e2fd);
+  color: #0d0c0c;
+  font-size: 15px;
+  line-height: 18px;
+  padding-bottom: 0;
+  margin-top: 1%;
+}
+
+.footer-row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1px 0;
+}
+
+.footer-col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.footer-col:nth-child(2),
+.footer-col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.footer-col h3 {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+.footer-social-icons-container {
+  position: relative;
+  margin-top: 0px;
+}
+
+.footer-social-icons {
+  text-align: center;
+}
+
+.footer-social-icons ul {
+  display: flex;
+  flex-direction: column; /* Vertical alignment for desktop */
+  align-items: center;
+}
+
+.footer-social-icons ul li {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0px;
+}
+
+.footer-social-icons a {
+  color: #0b0a0a;
+  font-size: 1rem;
+  text-decoration: none;
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgb(241, 246, 241);
+}
+
+.footer-social-icons a:hover {
+  background-color: #fff;
+  color: #05d4f8;
+  box-shadow: 0 0 20px rgba(51, 255, 0, 0.8);
+}
+
+.footer-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  cursor: pointer;
+  background-color: #3245d5;
+  padding: 12px;
+  border-radius: 100%;
+  font-size: 22px;
+  color: #f5eded;
+}
+
+.footer-contact-info li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.footer-contact-info ion-icon {
+  margin-right: 5px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin: 10px;
+  margin-left: 100px;
+  padding: 3px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  animation: pulse 2s infinite;
+}
+
+.footer h2{
+  margin-left: 100px;
+  font-size: small;
+}
+
+.footer-text
+{
+  text-align: center;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(236, 88, 249, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(158, 35, 210, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(194, 42, 211, 0.5);
+  }
+}
+
+.footer hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #0f0e0e;
+  margin: 20px auto;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Footer WhatsApp and Call buttons */
+.footer-whatsapp, .footer-call {
+  color: #f5eded;
+  position: fixed;
+  right: 20px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.footer-whatsapp {
+  background-color: #159612;
+  bottom: 70px;
+}
+
+.footer-call {
+  background-color: #0572d1;
+  bottom: 120px;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 1024px) {
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-col {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-social-icons-container {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .footer-social-icons ul {
+    flex-direction: row; /* Horizontal alignment for mobile */
+    flex-wrap: wrap;
+  }
+
+  .footer-logo {
+    margin: 0 auto 20px auto; /* Center the logo horizontally */
+    display: block;
+  }
+
+  .footer h2 {
+    text-align: center;
+    margin-left: 0; /* Remove left margin to center the text */
+    margin-top: 10px; /* Add some space between the logo and text */
+  }
+}
+

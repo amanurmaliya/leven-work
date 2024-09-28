@@ -1,0 +1,66 @@
+.team-card ::after {
+    content: '';
+    /* position: absolute; */
+    top:0%;
+    left:0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.0);
+}
+
+@media only screen and (max-width: 768px) {
+    .team-card {
+      width: 100%;
+      margin: 10px;
+      /* height: 100%; */
+    }
+    .image {
+      width: 80%;
+      height: 150px;
+    }
+    .description {
+      padding: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .team-card {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .image {
+      width: 90%;
+      height: 200px;
+    }
+    .description {
+      padding: 5px;
+    }
+  }
+
+  /* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 2rem;
+    }
+  
+    .left {
+      margin-top: 2rem;
+      margin-left: 0;
+    }
+  
+    .left p {
+      font-size: 2rem;
+    }
+  
+    .left span {
+      font-size: 3rem;
+    }
+  
+    .right {
+      margin-top: 2rem;
+      margin-left: 0;
+      padding: 2rem;
+      font-size: 1.5rem;
+    }
+  }
